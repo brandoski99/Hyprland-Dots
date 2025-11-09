@@ -53,42 +53,25 @@ require("cmp_git").setup() ]]--
 
 
 -- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').default_capabilities()
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
 
 -- C/C++
-require('lspconfig')['clangd'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('clangd')
 
 --Lua
-require('lspconfig')['lua_ls'].setup {
-	capabilities = capabilities
-
-}
+vim.lsp.enable('lua_ls')
 
 --Cmake
-require('lspconfig')['cmake'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('cmake')
 
 --Golang
-require('lspconfig')['gopls'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('gopls')
 
 --HTML
-require('lspconfig')['html'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('html')
 
 --CSS
-require('lspconfig')['cssls'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('cssls')
 
 --JSON
-require('lspconfig')['jsonls'].setup {
-	capabilities = capabilities
-}
+vim.lsp.enable('jsonls')
 

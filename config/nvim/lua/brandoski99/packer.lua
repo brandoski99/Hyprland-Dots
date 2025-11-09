@@ -12,8 +12,8 @@ return require('packer').startup(function(use)
 	}
 
 	--rose-pine
-	use{ "rose-pine/neovim"}
-        --gruvbox_material
+	use{"rose-pine/neovim"}
+	--gruvbox_material
 	use{"sainnhe/gruvbox-material"}
 	--undotree
 	use {'mbbill/undotree'}
@@ -35,14 +35,14 @@ return require('packer').startup(function(use)
 	use {"nvimtools/none-ls.nvim"}
 	--AutoPair
 	use {
-    "windwp/nvim-autopairs",
-    event = "InsertEnter",
-    config = function()
-        require("nvim-autopairs").setup {}
-    end
-    }
-       --Nvim-Treesitter
-       use {
-	       'nvim-treesitter/nvim-treesitter'
-       }
+		"windwp/nvim-autopairs",
+		event = "InsertEnter",
+		config = function()
+			require("nvim-autopairs").setup {}
+		end
+	}
+	--Nvim-Treesitter
+	use {
+		'nvim-treesitter/nvim-treesitter'
+	}
 end)
